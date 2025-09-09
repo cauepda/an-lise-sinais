@@ -12,7 +12,7 @@ session_name = os.getenv("SESSION_NAME", "session")
 # Cria cliente
 client = TelegramClient(session_name, api_id, api_hash)
 
-async def export_group_messages(group_username, output_file="mensagens.csv", limit=500):
+async def export_group_messages(group_username, output_file="mensagens_backup.csv", limit=500):
     """
     Exporta mensagens de um grupo para um arquivo CSV.
     
@@ -38,7 +38,7 @@ async def export_group_messages(group_username, output_file="mensagens.csv", lim
 async def main():
     # Substitua pelo @username ou link do grupo
     grupo = "https://t.me/+bhVaGzRkhuozZDIx"  # ex: "https://t.me/grupoTeste"
-    await export_group_messages(grupo, output_file="mensagens.csv", limit=100000)
+    await export_group_messages(grupo, output_file="mensagens.csv", limit=100)
 
 with client:
     client.loop.run_until_complete(main())

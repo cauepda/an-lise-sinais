@@ -1,17 +1,6 @@
-# Requirements for Trading Signals Analysis Dashboard
-# Data Analysis and Visualization
 streamlit==1.40.1
 pandas==1.5.3
 plotly==5.24.0
 numpy==1.26.4
-
-# Telegram Bot Integration  
 telethon==1.41.2
 python-dotenv==1.0.1
-
-# Note: The following are built-in Python modules and don't need to be installed:
-# - re (regular expressions)
-# - os (operating system interface)
-# - csv (CSV file reading and writing)
-# - datetime (date and time handling)
-# - collections (specialized container datatypes)
